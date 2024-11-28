@@ -1,0 +1,74 @@
+body {
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dice-img {
+  width: 400px;
+  height: 400px;
+  margin: 40px;
+}
+
+.dice-img.flip {
+  animation: flipScale 0.8s ease-in-out; /*Zar atıldığında animasyon ekler*/
+}
+
+@keyframes flipScale {
+  0% {
+    transform: rotateX(0deg) scale(1);
+  }
+  50% {
+    transform: rotateX(180deg) scale(0.8);
+  }
+  100% {
+    transform: rotateX(360deg) scale(1);
+  }
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.score-board {
+  border: 2px solid black;
+  font-size: 20px;
+  margin: 0 400px;
+}
+
+.input {
+  margin-right: 120px;
+  font-size: 24px;
+  background-color: black;
+  color: white;
+  padding: 4px;
+}
+
+.input2 {
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  margin-left: 120px;
+  padding: 4px;
+}
+
+.btn {
+  padding: 8px 36px;
+  font-size: 24px;
+  border-radius: 6px;
+  background-color: black;
+  color: white;
+  margin-bottom: 40px;
+}
